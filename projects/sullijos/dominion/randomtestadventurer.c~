@@ -230,7 +230,7 @@ int myAssert(int expression, int* passedAllTests, char message[]){
     if(expression){
         return 1;
     }
-    printf("TEST FAILED: %s\n", message);
+    //printf("TEST FAILED: %s\n", message);
     //printf("Enter to continue / 'E' to exit.\n\n");
     *passedAllTests = 0;
     /*
