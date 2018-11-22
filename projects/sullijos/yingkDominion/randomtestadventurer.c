@@ -12,7 +12,7 @@
 #include "rngs.h"
 #include <time.h>
 
-# define NOISY_TEST 0 
+# define NOISY_TEST 1 
 # define NUM_TESTS 20000
 
 char* getCardName(int card);
