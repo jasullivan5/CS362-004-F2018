@@ -89,7 +89,7 @@ randomtestresults: randomtestcard1.c randomtestcard2.c randomtestadventurer.c do
 	cat dominion.c.gcov >> randomtestadventurer.out
 
 
-unittestresults: unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c cardtest2.c cardtest3.c cardtest4.c dominion.o rngs.o
+unittestresults: cardtest1.c cardtest2.c cardtest3.c cardtest4.c dominion.o rngs.o
 
 	echo "Result for running tests:" > unittestresults.out
 
