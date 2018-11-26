@@ -88,7 +88,6 @@ randomtestresults: randomtestcard1.c randomtestcard2.c randomtestadventurer.c do
 	gcov -f dominion.c >> randomtestadventurer.out
 	cat dominion.c.gcov >> randomtestadventurer.out
 
-
 unittestresults: cardtest1.c cardtest2.c cardtest3.c cardtest4.c dominion.o rngs.o
 
 	echo "Result for running tests:" > unittestresults.out
@@ -113,8 +112,6 @@ unittestresults: cardtest1.c cardtest2.c cardtest3.c cardtest4.c dominion.o rngs
 	./cardtest4 >> unittestresults.out
 	gcov -f dominion.c >> unittestresults.out
 	cat dominion.c.gcov >> unittestresults.out
-
-all: playdom player unittest4 unittest2 unittest3 unittest1 cardtest3 cardtest1 cardtest4 cardtest2
 
 clean:
 	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe unittest4 unittest4.exe unittest2 unittest2.exe unittest1 unittest1.exe unittest3 unittest3.exe cardtest3 cardtest3.exe cardtest1 cardtest1.exe cardtest4 cardtest4.exe cardtest2 cardtest2.exe unittestresults.out randomtestcard1 randomtestcard1.exe randomtestcard2 randomtestcard2.exe randomtestadventurer randomtestadventurer.exe randomtestcard1.out randomtestcard2.out randomtestadventurer.out
